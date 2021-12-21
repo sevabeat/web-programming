@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="js/page-load-speed.js"></script>
+    <meta charset="UTF-8">
+    <title>Интернет магазин автомобилей</title>
+    <meta name="description" content="Продаем автомобили с 1993 года">
+    <meta name="keywords" content="Машины, Автосалон, Интернет-магазин">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+          integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<header class="header">
+    <div class="container header__wrapper">
+        <div class="header__logo">
+            <span class="header__logo-text">VehicleOnline</span>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-links">
+                <li class="header__nav-link-wrapper">
+                    <a class="link link_header header__nav-link" href="/Web-programming/">Главная</a>
+                </li>
+                <li class="header__nav-link-wrapper">
+                    <a class="link link_header header__nav-link" href="/Web-programming/catalog.html">Каталог</a>
+                </li>
+                <!--                <li class="header__nav-link-wrapper">-->
+                <!--                    <a class="link link_header header__nav-link" href="#">Контакты</a>-->
+                <!--                </li>-->
+            </ul>
+        </nav>
+        <div class="header__profile">
+            <a class="link link_header header__profile-orders" href="/Web-programming/orders.html">Мои заказы</a>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container">
+        <div class="catalog-header">
+            <h1 class="title">Автомобили в наличии</h1>
+            <select class="form-select catalog-header__filter" name="vehicleType">
+                <option value="0">Все</option>
+                <option value="1">Седан</option>
+                <option value="2">Внедорожник</option>
+            </select>
+        </div>
+        <div class="catalog">
+            <div class="catalog__items">
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container footer__wrapper">
+        <span class="footer__details footer__company-info">
+            Roga and kopita LLC
+        </span>
+        <span class="footer__details footer__student-info">
+            Page loaded in <span id="LoadTime"></span>
+        </span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"
+            integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/Order.js"></script>
+    <script src="js/car-details.js"></script>
+    <script src="js/catalog.js"></script>
+    <script>
+        const t = new Catalog();
+        t.getCars().then((cars) => {
+            t.render(cars);
+        });
+        document.querySelector('.catalog-header__filter').addEventListener('change', (event) => {
+            t.getCars(event.target.value).then((cars) => {
+                t.render(cars);
+            });
+        });
+    </script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+.about-shop__company-desc{
+    margin-top: 20px;
+}
+.index-desc{
+    font-size: 15px;
+    width: 650px;
+    color: #b8bfc3;
+    line-height: 1.7;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .index-desc{
+        font-size: 14px;
+        width: 100%;
+        padding-right: 30px;
+        line-height: 1.6;
+        max-width: 650px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .index-desc{
+        font-size: 13px;
+        width: 100%;
+        line-height: 1.5;
+    }
+}
+
+.about-shop__stats{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.about-shop__stat{
+    padding-right: 40px;
+}
+.about-shop__stat-value{
+    font-weight: 800;
+    font-size: 22px;
+    color: #4484eb;
+}
+.about-shop__stat-prop{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #b8bfc3;
+}
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .about-shop__stat-value{
+        font-size: 20px;
+    }
+    .about-shop__stat-prop{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .about-shop__stat-value{
+        font-size: 18px;
+    }
+    .about-shop__stat-prop{
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    .about-shop__stat{
+        padding-right: 20px;
+    }
+}
+
+
+.car-image{
+    margin-top: 110px;
+}
+.car-image__image-wrapper{
+    text-align: center;
+    width: 100%;
+}
+.car-image__text-image{
+    font-family: 'Courier', monospace;
+    display: inline-block;
+    color: #4484eb;
+    text-align: left;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .car-image__text-image{
+        font-size: 1vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .car-image__image-wrapper{
+        display: none;
+    }
+}
+
+.quality-system{
+    margin-top: 200px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .quality-system{
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .quality-system{
+        margin-top: 70px;
+    }
+}
+
+.quality-system__desc{
+    margin-top: 20px;
+}
+.quality-system__fragment-title{
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 25px;
+}
+.quality-system__program-fragment{
+    background-color: #25282c;
+    border-radius: 7px;
+    width: 550px;
+    margin-top: 20px;
+    padding: 20px 0px;
+    line-height: 1.7;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .quality-system__program-fragment{
+        width: 100%;
+        padding: 10px 0px;
+        line-height: 1.6;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .quality-system__program-fragment{
+        width: 100%;
+        padding: 10px 0px;
+        line-height: 1.5;
+        font-size: 2.5vw;
+    }
+}
+
+.code_orange{
+    color: #ad6a2f;
+}
+.code_type{
+    color: #adb3bb;
+}
+.code_method{
+    color: #cbaa71;
+}
+.clients-reviews__desc{
+    margin-top: 20px;
+}
+.clients-reviews__quote{
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+.clients-reviews__name{
+    font-weight: bold;
+    font-style: italic;
+}
+.clients-reviews{
+    margin-top: 200px;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .clients-reviews{
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .clients-reviews{
+        margin-top: 70px;
+    }
+    .clients-reviews__quote{
+        font-size: 12px;
+    }
+}

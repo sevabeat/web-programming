@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="js/page-load-speed.js"></script>
+    <meta charset="UTF-8">
+    <title>Интернет магазин автомобилей</title>
+    <meta name="description" content="Продаем автомобили с 1993 года">
+    <meta name="keywords" content="Машины, Автосалон, Интернет-магазин">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="header">
+    <div class="container header__wrapper">
+        <div class="header__logo">
+            <span class="header__logo-text">VehicleOnline</span>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-links">
+                <li class="header__nav-link-wrapper">
+                    <a class="link link_header header__nav-link header__nav-link_selected" href="/Web-programming/">Главная</a>
+                </li>
+                <li class="header__nav-link-wrapper">
+                    <a class="link link_header header__nav-link" href="/Web-programming/catalog.html">Каталог</a>
+                </li>
+<!--                <li class="header__nav-link-wrapper">-->
+<!--                    <a class="link link_header header__nav-link" href="#">Контакты</a>-->
+<!--                </li>-->
+            </ul>
+        </nav>
+        <div class="header__profile">
+            <a class="link link_header header__profile-orders" href="/orders.html">Мои заказы</a>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <section class="about-shop">
+            <h1 class="title">О компании</h1>
+            <p class="index-desc about-shop__company-desc">
+                <b>С 1993 года</b> наша компания занимается продажей автомобилей в странах восточной европы.
+
+                Портфель брендов компании включает 5 автомобильных марок и один мотоциклетный бренд: BMW, Lexus, Mercedes-Benz, Porsche, Toyota. Мы доставляем машины в 7 стран: Латвия, Литва, Эстония, Россия, Польша, Венгрия, Беларусь.
+            </p>
+            <ul class="about-shop__stats">
+                <li class="about-shop__stat">
+                    <div class="about-shop__stat-value">98,234</div>
+                    <div class="about-shop__stat-prop">Продано автомобилей</div>
+                </li>
+                <li class="about-shop__stat">
+                    <div class="about-shop__stat-value">29</div>
+                    <div class="about-shop__stat-prop">Автомобилей в наличии</div>
+                </li>
+                <li class="about-shop__stat">
+                    <div class="about-shop__stat-value">3 дня</div>
+                    <div class="about-shop__stat-prop">Время доставки</div>
+                </li>
+            </ul>
+        </section>
+        <section class="quality-system">
+            <h1 class="title">Иновационная система проверки автомобиля</h1>
+            <p class="index-desc quality-system__desc">
+                Наша компания разработала единственную в мире систему позволяющуу с точностью 99.9% найти недостатки в конструкции автомобиля.
+                <br><br>
+                Все автомобили в нашем катологе прошли проверку через эту систему. Покупая автомобиль вы можете быть уверены в том,
+                что автомобиль набрал более 99 очков качества!
+            </p>
+            <h2 class="quality-system__fragment-title">Фрагмент исходного кода системы: </h2>
+            <pre class="quality-system__program-fragment">
+                <span class="code_orange">class</span> <span class="code_type">QualityControl</span>
+                <span class="code_type">{</span>
+                    <span class="code_orange">public</span> <span class="code_type">Integer</span> <span class="code_method">getPoints</span><span class="code_type">(Car car)</span>
+                    <span class="code_type">{</span>
+                        <span class="code_orange">return</span> <span class="code_type">((</span><span class="code_orange">int</span><span class="code_type">) (Math.random()*(100 - 99))) + 100;</span>
+                    <span class="code_type">}</span>
+                <span class="code_type">}</span></pre>
+        </section>
+        <section class="clients-reviews">
+            <h1 class="title">Клиенты - наше всё</h1>
+            <p class="index-desc clients-reviews__desc">
+                Каждому покупателю мы предоставляем персонального менеджера. Вы можете задавать свои вопросы 24 часа в сутки.
+            </p>
+            <blockquote class="clients-reviews__quote">
+                <p>
+                    Лучшего интернет магазина автомобилей я не встречал!
+                    <br>
+                    Доставили за 4 дня, машина в идеальном состоянии
+                    <br>
+                    <br>
+                    --------
+                    <br>
+                    <span class="clients-reviews__name">Покупатель из Санкт-Петербурга</span>
+                </p>
+            </blockquote>
+        </section>
+        <section class="car-image">
+            <div class="car-image__image-wrapper">
+                <pre class="car-image__text-image">
+                                                            ___________
+                                                  __..--""""           """"--..__
+                                              _.-"""""""""""-----...      ______ `.
+                                           .-"                      l ,-""    \ "-.`.
+                                        .-"                         ; ;        ;   \ ""--.._
+                                      .'                           : :         |    ;      .l
+                                _.._.'                             ; ;  ___    |    ;    .' :
+                               (  .'                              : :  :   ".  :..-'   .'    ;
+                                )'                                | ;  ; __.'-"(     .'  .--.:
+                        ___...-'""""----....____          ______.-' :-/.'       \_.-'  .' .-.\l
+                __..--""                        """"""""""          /\"          ;    / .gs./\;
+            _.-"                                                   /  ;          |   . d$P"Tb
+         .-""-,                       ____                        /   |          :   ;:$$   $;
+       .'     ;                    ,""    ""--..__               /    :          |   $$$;   :$
+      /"-._  /                     ;       ____..-'    .-"""-.  /     :          ;  _$$$;   :$
+     :     ""--.._          ___....+---""""          .'  _._  \/      |         _:-" $$$;   :$
+     ;                                              /  .d$$$b./       ;      .-".'   :$$$   $P
+    :            .----...____                      :  dP' `T$P        |   .-" .' _.gd$$$$b_d$'
+    ;    __...---|   Машина  |----....____         | :$     $b        : .'   (.-"  `T$$$$$$P'
+    ;  .';       '----...____;       /    "-.      ; $;     :$;_____..-"  .-"
+    : /  :                          /        \__..-':$       $$ ;-.    .-"
+     Y    ;                        /          ;     $;       :$;|  `.-"
+     :    :                       /           |     $$       $$;:.-"
+     '$$$ggggp...____            /            :     :$;     :$$
+      $$$$$$$$$$$$   """"----...:________....gggg$$$$$$     $$;
+      'T$$$$$$$$P'                           T$$$$$$$$$b._.d$P
+        `T$$$$P'                              T$$$$$$$$$$$$$P
+                                               `T$$$$$$$$$P'
+                </pre>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container footer__wrapper">
+        <span class="footer__details footer__company-info">
+            Roga and kopita LLC
+        </span>
+        <span class="footer__details footer__student-info">
+            Page loaded in <span id="LoadTime"></span>
+        </span>
+    </div>
+</footer>
+</body>
+</html>

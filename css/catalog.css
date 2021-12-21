@@ -1,0 +1,174 @@
+.catalog__items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+    gap: 2rem;
+}
+.catalog{
+    min-height: 1000px;
+}
+.catalog__item{
+    /*width: calc(33% - 40px);*/
+    flex: 1 1 calc((100% / 3) - 4rem);
+    height: 300px;
+    background-color: #24262a;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 4px 0px #1e2124;
+    padding: 20px;
+}
+.catalog-header__filter{
+    margin-top: 20px;
+    max-width: 250px;
+}
+
+.catalog__item-image{
+    width: 100%;
+    height: 170px;
+    background-size: contain;
+    background-image: url("/images/mercedes/gle_1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.catalog__item-name{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 30px;
+    display: block;
+}
+.catalog__item-tags{
+    display: flex;
+    margin-top: 15px;
+}
+.catalog__item-tag{
+    font-size: 13px;
+    background-color: #1a1c21;
+    padding: 7px 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #979fa8;
+}
+.catalog__item-tag:first-child{
+    margin-left: 0px;
+}
+
+.modal-layout{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.modal{
+
+}
+.modal_car-details{
+    margin-top: 120px;
+    width: 900px;
+    background-color: #2e3136;
+    border-radius: 10px;
+}
+.car-details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.car-details__image{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.car-details__image-holder{
+    flex: 0 500px;
+    height: 480px;
+}
+.car-details__details{
+    flex: 1 auto;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.car-details__details-name{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+.car-details__properties{
+    margin-top: 25px;
+}
+.car-details__prop{
+    margin-top: 15px;
+}
+.car-details__prop:first-child{
+    margin-top: 0px;
+}
+.car-details__prop-type{
+    font-size: 15px;
+    color: #b8bfc3;
+}
+.car-details__prop-value{
+    font-size: 15px;
+    font-weight: 500;
+    color: #f2f9fd;
+}
+.color-picker{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+}
+.color-picker__color{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.2s opacity;
+    opacity: 0.6;
+}
+.color-picker__color_selected{
+    opacity: 1;
+}
+.color-picker__color:not(.color-picker__color_selected):hover{
+    opacity: 0.85;
+}
+.car-details__color-picker{
+    margin-top: 20px;
+}
+.color-picker__color:first-child{
+    margin-left: 0px;
+}
+.color-picker__color_blue{
+    background: linear-gradient(145deg, #327c9f, #1b4d60);
+    box-shadow: 0px 0px 7px #174252;
+}
+.color-picker__color_red{
+    background: linear-gradient(
+            145deg, #ab3838, #641f23);
+    box-shadow: 0px 0px 7px #621f20;
+}
+.color-picker__color_silver{
+    background: linear-gradient(
+            145deg, #c6c7ca, #666972);
+    box-shadow: 0px 0px 7px #565a62;
+}
+.car-details__payment-form{
+    margin-top: 20px;
+}
+.car-details__payment-form-confirm{
+    margin-top: 20px;
+}
